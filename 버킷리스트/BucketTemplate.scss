@@ -1,0 +1,22 @@
+.BucketTemplate {
+  width: 512px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+  border-radius: 4px;
+  overflow: hidden;
+
+  .app-title {
+    background: #0f8353;
+    color: white;
+    height: 6rem;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content {
+    background: #78df74;
+  }
+}
