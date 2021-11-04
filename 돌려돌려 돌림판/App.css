@@ -1,0 +1,151 @@
+li:first-child .text {
+  background-color: rgb(233, 168, 233);
+}
+li:nth-child(2) .text {
+  background-color: rgb(192, 164, 212);
+}
+li:nth-child(3) .text {
+  background-color: rgb(157, 157, 216);
+}
+li:nth-child(4) .text {
+  background-color: rgb(215, 245, 215);
+}
+li:nth-child(5) .text {
+  background-color: rgb(241, 241, 182);
+}
+li:nth-child(6) .text {
+  background-color: rgb(241, 208, 141);
+}
+li:nth-child(7) .text {
+  background-color: rgb(240, 146, 146);
+}
+li:nth-child(8) .text {
+  background-color: rgb(241, 149, 241);
+}
+li:nth-child(9) .text {
+  background-color: rgb(188, 133, 231);
+}
+li:nth-child(10) .text {
+  background-color: rgb(139, 139, 235);
+}
+li:nth-child(11) .text {
+  background-color: rgb(118, 221, 135);
+}
+li:nth-child(12) .text {
+  background-color: rgb(234, 241, 127);
+}
+
+li:first-child {
+  transform: rotate(0deg) skewY(-60deg);
+}
+li:nth-child(2) {
+  transform: rotate(30deg) skewY(-60deg);
+}
+li:nth-child(3) {
+  transform: rotate(60deg) skewY(-60deg);
+}
+li:nth-child(4) {
+  transform: rotate(90deg) skewY(-60deg);
+}
+li:nth-child(5) {
+  transform: rotate(120deg) skewY(-60deg);
+}
+li:nth-child(6) {
+  transform: rotate(150deg) skewY(-60deg);
+}
+li:nth-child(7) {
+  transform: rotate(180deg) skewY(-60deg);
+}
+li:nth-child(8) {
+  transform: rotate(210deg) skewY(-60deg);
+}
+li:nth-child(9) {
+  transform: rotate(240deg) skewY(-60deg);
+}
+li:nth-child(10) {
+  transform: rotate(270deg) skewY(-60deg);
+}
+li:nth-child(11) {
+  transform: rotate(300deg) skewY(-60deg);
+}
+li:nth-child(12) {
+  transform: rotate(330deg) skewY(-60deg);
+}
+.circle {
+  width: 25em;
+  height: 25em;
+  border: 1px solid black;
+  position: relative;
+  padding: 0;
+  margin: 1em auto;
+  border-radius: 50%;
+  list-style: none;
+  overflow: hidden;
+}
+li {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  transform-origin: 0% 100%;
+}
+.text {
+  position: absolute;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  text-align: center;
+  display: block;
+  transform: skewY(60deg) rotate(15deg);
+  padding-top: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+}
+.app-title {
+  color: rgb(1, 20, 13);
+
+  height: 6rem;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 30px solid black;
+  position: absolute;
+  left: 49.25%;
+  top: 100px;
+  z-index: 1;
+}
+.spin-button {
+  position: absolute;
+  left: 45%;
+  width: 120px;
+  height: 40px;
+  background-color: rgb(32, 32, 39);
+  border-radius: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  font-size: 18px;
+}
+
+.start-rotate {
+  animation: start-rotate 1s linear infinite;
+}
+@keyframes start-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.stop-rotate {
+  animation-play-state: paused;
+}
