@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>진단검사지</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3d072189ae.js" crossorigin="anonymous"></script>
+  <script src="main.js" defer></script>
+  </head>
+  <body>
+    <nav class = "navbar">
+      <div class = "navbar__logo">
+        <i class="fas fa-ambulance"></i>
+        <a href="">Autodiagnosis</a>
+      </div>
+
+      <div class = "navbar__menu">
+        <li><a href="">Home</a></li>   
+        <li><a href="">About</a></li>   
+        <li><a href="">Test</a></li>   
+      </div>
+      <ul class = "navbar__icons">
+        <li><i class="fab fa-instagram-square"></i></li>
+        <li><i class="fab fa-facebook-square"></i></li>
+        <li><i class="fab fa-twitter-square"></i></li>
+
+      </ul>
+      <a href="#" class="navbar__toolBtn">
+        <i class="fas fa-bars"></i>
+      </a>
+      
+    </nav>
+    <div class="start_btn"><button>Start Test </button></div>
+
+    <div class="info_box">
+      <div class="info_title">
+        <span>Some Rules of this Self-Test</span>
+      </div>
+      <div class="info_list">
+        <div class="info">1. Think about the small and trivial symptoms you have had. </div>
+        <div class="info">2. Don't feel pressured and press whatever comes to mind.</div>
+        <div class="info">3. Please check it as it is.</div>
+        <div class="info">4.The question option is yes or no.  <span>  Please choose one.</span></div>
+      </div>
+      <div class="buttons">
+        <button class="quit">Exit</button>
+        <button class="restart">Continue</button>
+      </div>
+    </div>
+
+    <div class="test_box">
+      <header>
+        <div class="title">Self-diagnosis Test Application</div>
+        <div class="timer">
+          <div class = "time_text">Time Left</div>
+          <div class="timer_sec">180</div>
+        </div>
+      </header>
+      <section>
+        <div class="tes_text">
+          <span>증상 질문 1</span>
+        </div>
+        <div class="option_list">
+          <div class="option">
+            <span>Yes</span>
+            <div class="icon thick"><i class="fas fa-check"></i></div>
+          </div>
+          <div class="option">
+            <span>No</span>
+            <div class="icon cross"><i class="fas fa-times"></i></div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="total_que">
+          <span><p>2 </p>of <p> 5</p>Questions</span>
+        </div>
+        <button class="next_btn">Next Question</button>
+      </footer>
+    </div>
+
+    <div class="result_box">
+      <div class="icons">
+        <i class="fas fa-crown"></i>
+      </div>
+      <div class="complete_text">Your diagnostic test is over.</div>
+      <div class="buttons">
+        <button class="restart"> Replay Test </button>
+        <button class="quit"> Quit </button>
+      </div>
+    </div>
+
+  </body>
+</html>
