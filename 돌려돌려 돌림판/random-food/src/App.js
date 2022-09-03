@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
-//import Navbar from "./components/Navbar";
-import Background from "../src/assets/background.jpg";
+
 class App extends React.Component {
   state = {
     name: "circle",
@@ -16,21 +15,10 @@ class App extends React.Component {
       });
     }, Math.floor(Math.random() * 10000) + 1);
   };
-
   render() {
     return (
-      <div
-        style={{
-          backgroundImage: `url(${Background})`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          width: "100%",
-          height: "700px",
-        }}
-      >
-        <div className="app-title">결정장애를 위한 돌려돌려 돌림판</div>
+      <div>
         <div className="arrow"></div>
-
         <ul className={this.state.name}>
           <li>
             <div className="text" contenteditable="true" spellcheck="false">
@@ -87,13 +75,7 @@ class App extends React.Component {
               11
             </div>
           </li>
-          <li>
-            <div className="text" contenteditable="true" spellcheck="false">
-              12
-            </div>
-          </li>
         </ul>
-
         <button className="spin-button" onClick={this.startRotation}>
           SPIN
         </button>
@@ -101,5 +83,4 @@ class App extends React.Component {
     );
   }
 }
-
 export default App;

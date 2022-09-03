@@ -106,7 +106,7 @@ li {
 }
 .app-title {
   color: rgb(1, 20, 13);
-
+  background-image: url("../src/img/background2.jpg");
   height: 6rem;
   font-size: 3rem;
   display: flex;
@@ -137,7 +137,6 @@ li {
   color: white;
   font-size: 18px;
 }
-
 .start-rotate {
   animation: start-rotate 1s linear infinite;
 }
@@ -149,3 +148,7 @@ li {
 .stop-rotate {
   animation-play-state: paused;
 }
+
+/*.container {
+  background-image: url(../img/background2.jpg);
+}*/
